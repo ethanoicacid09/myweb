@@ -1,0 +1,11 @@
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+body{
+    text-align: center;
+    background-color: #67efed;
+    color: purple;
+    font-family: Arial, sans-serif;
+}
