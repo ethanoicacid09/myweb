@@ -3,40 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Villages</title>
+    <title>HerbYoga Haven - Herbs & Yoga E-commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Urban Villages</h1>
+    <header class="parallax-hero" id="home">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">HerbYoga Haven</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-btn">Cart (0)</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Discover Harmony with Herbs & Yoga</h1>
+            <p>Premium organic herbs, yoga essentials, and wellness products for your mind, body, and soul.</p>
+            <a href="#products" class="cta-btn">Shop Now</a>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#why">Why</a></li>
-            <li><a href="#how">How</a></li>
-            <li><a href="#what">What</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section id="why">
-            <h2>Why</h2>
-            <p>Urban villages promote sustainable living by fostering community and reducing urban sprawl.</p>
-        </section>
-        
-        <section id="how">
-            <h2>How</h2>
-            <p>They are developed through mixed-use zoning, pedestrian-friendly designs, and green spaces integration.</p>
-        </section>
-        
-        <section id="what">
-            <h2>What</h2>
-            <p>Urban villages are compact, self-contained neighborhoods that blend residential, commercial, and recreational areas.</p>
-        </section>
-    </main>
-    
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Organic+Herbs" alt="Organic Herbs">
+                    <h3>Organic Herbal Tea Blend</h3>
+                    <p>Calming chamomile and lavender mix for daily wellness.</p>
+                    <div class="price">$19.99</div>
+                    <button class="add-to-cart" data-product="Herbal Tea">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Yoga+Mat" alt="Yoga Mat">
+                    <h3>Premium Eco Yoga Mat</h3>
+                    <p>Non-slip, sustainable rubber mat for perfect poses.</p>
+                    <div class="price">$49.99</div>
+                    <button class="add-to-cart" data-product="Yoga Mat">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Aromatherapy" alt="Aromatherapy Oils">
+                    <h3>Essential Oil Set</h3>
+                    <p>Pure lavender and eucalyptus oils for relaxation.</p>
+                    <div class="price">$29.99</div>
+                    <button class="add-to-cart" data-product="Essential Oils">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Yoga+Blocks" alt="Yoga Blocks">
+                    <h3>Cork Yoga Blocks</h3>
+                    <p>Supportive blocks for deeper stretches and balance.</p>
+                    <div class="price">$24.99</div>
+                    <button class="add-to-cart" data-product="Yoga Blocks">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section parallax-bg">
+        <div class="container">
+            <h2>About HerbYoga Haven</h2>
+            <p>We blend ancient wisdom with modern wellness. Our curated selection of organic herbs and yoga gear promotes holistic health. Sourced sustainably, every product is designed to enhance your practice and nourish your spirit.</p>
+            <div class="stats">
+                <div class="stat">1000+ Happy Customers</div>
+                <div class="stat">Eco-Friendly Products</div>
+                <div class="stat">Free Shipping Over $50</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"The herbal teas transformed my yoga routine—pure bliss!"</p>
+                    <span>- Sarah L.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Best yoga mat I've owned. Eco-friendly and grippy."</p>
+                    <span>- Mike R.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Love the essential oils. Perfect for meditation."</p>
+                    <span>- Emma T.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HerbYoga Haven. All rights reserved. | Sustainable Wellness for All.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-        
