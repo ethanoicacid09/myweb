@@ -1,17 +1,3 @@
-// Theme Toggle
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = document.getElementById('themeIcon');
-
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    themeIcon.textContent = document.body.classList.contains('dark') ? '🌙' : '☀️';
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-});
-if (localStorage.getItem('theme') === 'dark' || 
-    (window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme'))) {
-    document.body.classList.add('dark');
-    themeIcon.textContent = '🌙';
-
 // Professional E-commerce Parallax Website Script
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
